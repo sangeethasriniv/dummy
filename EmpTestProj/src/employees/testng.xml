@@ -1,0 +1,12 @@
+<suite name="mytestsuite">
+	<parameter name="empname" value="sangeetha" />
+	<test name="mytest">
+		<classes>
+			<class name="employees.emptestwithxml">
+				<methods>
+					<include name="testOne" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 

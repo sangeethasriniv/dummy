@@ -1,17 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-10-02T22:12:55 EDT" name="Default suite" finished-at="2019-10-02T22:12:55 EDT" duration-ms="125">
+  <suite started-at="2019-10-07T19:11:37 EDT" name="Default suite" finished-at="2019-10-07T19:11:38 EDT" duration-ms="529">
     <groups>
+      <group name="group1">
+        <method signature="emptest.testNothing(java.lang.String, int)[pri:0, instance:employees.emptest@1e67a849]" name="testNothing" class="employees.emptest"/>
+        <method signature="emptest.sometest1()[pri:0, instance:employees.emptest@1e67a849]" name="sometest1" class="employees.emptest"/>
+      </group> <!-- group1 -->
     </groups>
-    <test started-at="2019-10-02T22:12:55 EDT" name="Default test" finished-at="2019-10-02T22:12:55 EDT" duration-ms="125">
+    <test started-at="2019-10-07T19:11:37 EDT" name="Default test" finished-at="2019-10-07T19:11:38 EDT" duration-ms="529">
       <class name="employees.emptest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:employees.emptest@7f77e91b]" started-at="2019-10-02T22:12:55 EDT" name="setup" finished-at="2019-10-02T22:12:55 EDT" duration-ms="37" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:employees.emptest@1e67a849]" started-at="2019-10-07T19:11:37 EDT" name="setup" finished-at="2019-10-07T19:11:37 EDT" duration-ms="131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testSalarySort()[pri:0, instance:employees.emptest@7f77e91b]" started-at="2019-10-02T22:12:55 EDT" name="testSalarySort" finished-at="2019-10-02T22:12:55 EDT" duration-ms="16" status="PASS">
+        <test-method signature="testNothing(java.lang.String, int)[pri:0, instance:employees.emptest@1e67a849]" started-at="2019-10-07T19:11:37 EDT" name="testNothing" data-provider="testData" finished-at="2019-10-07T19:11:38 EDT" duration-ms="47" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emp1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[41]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNothing -->
+        <test-method signature="testNothing(java.lang.String, int)[pri:0, instance:employees.emptest@1e67a849]" started-at="2019-10-07T19:11:38 EDT" name="testNothing" data-provider="testData" finished-at="2019-10-07T19:11:38 EDT" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emp2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[32]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNothing -->
+        <test-method signature="testAgeSort()[pri:0, instance:employees.emptest@1e67a849]" started-at="2019-10-07T19:11:38 EDT" name="testAgeSort" finished-at="2019-10-07T19:11:38 EDT" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAgeSort -->
+        <test-method signature="sometest1()[pri:0, instance:employees.emptest@1e67a849]" started-at="2019-10-07T19:11:38 EDT" name="sometest1" finished-at="2019-10-07T19:11:38 EDT" depends-on-methods="employees.emptest.testNothing" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sometest1 -->
+        <test-method signature="testSalarySort()[pri:0, instance:employees.emptest@1e67a849]" started-at="2019-10-07T19:11:38 EDT" name="testSalarySort" depends-on-groups="group1" finished-at="2019-10-07T19:11:38 EDT" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSalarySort -->

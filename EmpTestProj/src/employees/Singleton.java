@@ -4,11 +4,11 @@ public class Singleton {
 	private static Singleton instance = null;
 	private String s;
 	private Singleton() {
-		s="I am a singleton";
+		s="I am a Singleton";
 	}
 	public static Singleton getInstance() {
-		if(instance == null) 
-			instance = new Singleton();
+		if(instance==null)
+			instance=new Singleton();
 		return instance;
 	}
 	public static void main(String[] args) {

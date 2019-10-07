@@ -5,7 +5,7 @@
     <classes>
       <class name="employees.emptest">
         <methods>
-          <include name="testSalarySort"/>
+          <include name="testNothing"/>
           <include name="setup"/>
         </methods>
       </class> <!-- employees.emptest -->
